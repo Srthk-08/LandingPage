@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CafeRider-X</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            font-family: sans-serif;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url('LP.webp');
+            background-size: cover;
+        }
+
+        main {
+            border: 2px solid black;
+            display: grid;
+            grid-template-rows: 100px 500px 300px 200px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 2rem;
+        }
+
+        .header {
+            grid-column: 1/-1;
+        }
+
+            nav {
+                width: 100%;
+                height: 100px;
+                color: white;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .logo {
+                font-size: 2em;
+                letter-spacing: 2px;
+            }
+
+            .menu a {
+                text-decoration: none;
+                color: white;
+                padding: 10px 20px;
+                font-size: 20px;
+                position: relative;
+            }
+
+            .menu a:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0%;
+                height: 100%;
+                border-bottom: 2px solid indianred;
+                transition: 0.4s linear;
+            }
+
+            .menu a:hover:before {
+                width: 90%;
+            }
+
+            .register a {
+                text-decoration: none;
+                color: white;
+                padding: 10px 20px;
+                font-size: 20px;
+                background-color: indianred;
+                border-radius: 8px;
+                transition: 0.4s;
+            }
+
+            .register a:hover {
+                background: transparent;
+                border: 1px solid indianred;
+            }
+
+
+        .h-txt {
+            grid-column: 1/-1;
+            padding-top: 200px;
+            text-align: center;
+            color: white;
+        }
+
+        .h-txt span {
+            letter-spacing: 5px;
+        }
+
+        .h-txt h1 {
+            font-size: 3.5em;
+        }
+
+        .h-txt a {
+            text-decoration: none;
+            background: indianred;
+            color: white;
+            padding: 10px 20px;
+            letter-spacing: 5px;
+            transition: 0.4s;
+        }
+
+        .h-txt a:hover {
+            background: transparent;
+            border: 1px solid indianred;
+        }
+
+        div img {
+            width: 250px;
+            height: 150px;
+            margin-top: 10px;
+            margin-left: 2px;
+            border-radius: 30px;
+        }
+
+        .item1 {
+            text-align: center;
+            color: white;
+        }
+
+        .item2 {
+            text-align: center;
+            color: white;
+        }
+
+        .item3 {
+            text-align: center;
+            color: white;
+        }
+
+        .item4 {
+            text-align: center;
+            color: white;
+        }
+
+        div .ph {
+            border-bottom: 3px solid indianred;
+            font-size: 1.5em;
+            width: 120px;
+            margin-top: 10px;
+            margin-left: 120px;
+        }
+
+        div p {
+            padding-top: 10px;
+        }
+
+        .footer {
+            border-top: 2px solid black;
+            background: rgb(41, 41, 41);
+            color: indianred;
+            grid-column: 1/-1;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .footer div img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .footer .flex{
+            display: flex;
+            margin-left: 570px;
+        }
+
+        .footer div{
+            padding: 10px 5px;
+            width: 100px;
+            margin-left: 20px;
+        }
+        .footer a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="header">
+            <nav>
+                <div class="logo">
+                    CafeRider-X
+                </div>
+                <div class="menu">
+                    <a href="#">Home</a>
+                    <a href="#">Hill stations</a>
+                    <a href="#">Best offer's</a>
+                    <a href="#">Our Sites</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="register">
+                    <a href="#">Register</a>
+                </div>
+            </nav>
+        </div>
+        <div class="h-txt">
+            <span>Enjoy</span>
+            <h1>International Travel Agency</h1>
+
+            <br>
+            <a href="#">Book your Trip</a>
+        </div>
+        <div class="item1">
+            <img src="./manali.jpeg" alt="Manali">
+            <p class="ph">Manali</p>
+            <p>It is a rustic enclave known for its cool climate and snow-capped mountains, offering respite to tourists
+                escaping scorching heat of the plains.</p>
+        </div>
+        <div class="item2">
+            <img src="./shimla.jpg" alt="Shimla">
+            <p class="ph">Shimla</p>
+            <p>The town is famous for pleasant walking experiences on hillsides surrounded by pine and oak forests. This
+                capital city of Himachal Pradesh is famous for The Mall, ridge, and toy train.</p>
+        </div>
+        <div class="item3">
+            <img src="./masuri.jpg" alt="Masuri">
+            <p class="ph">Mussoorie</p>
+            <p>Mussoorie, also known as Queen of the Hills, is among the most popular hill stations of the country.
+                Famous as weekend getaway and honeymoon destination!</p>
+        </div>
+        <div class="item4">
+            <img src="./ooty.jpg" alt="Ooty">
+            <p class="ph">Ooty</p>
+            <p>Beautiful Mountain ranges with enjoyable weather conditions throughout the year. Hand gliding, Trekking
+                and mountain biking available for adventure enthusiasts.</p>
+        </div>
+
+        <div class="footer">
+            <h3>CafeRider-X</h1>
+                <p>Welcome to my world....</p>
+                <div class="flex">
+                    <div>
+                        <img src="./instagram.jpeg" alt="Instagram">
+                        <a href="#">Instagram</a>
+                    </div>
+                    <div>
+                        <img src="./facebook.jpeg" alt="Facebook">
+                        <a href="#">Facebook</a>
+                    </div>
+                    <div>
+                        <img src="./twitter.jpeg" alt="Twitter">
+                        <a href="#">Twitter</a>
+                    </div>
+                    <div>
+                        <img src="./gmail.jpeg" alt="Gmail">
+                        <a href="#">Gmail</a>
+                    </div>
+                </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
